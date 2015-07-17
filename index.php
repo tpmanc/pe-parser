@@ -8,4 +8,14 @@ require MODULE_PATH . 'vendor/autoload.php';
 
 use Classes\Parser;
 
-Parser::main();
+$parser = new Parser();
+$result = [];
+try {
+    $result = $parser->parse('/var/www/iexplore.exe');
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
+
+echo '<pre>';
+print_r($result);
+echo '</pre>';

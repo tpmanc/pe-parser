@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Classes/DosHeader.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Classes/PEHeader/FileHeader.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Classes/PEHeader/Machines.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Classes/PEHeader/PEHeader.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Classes/Parser.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index.php" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>
