@@ -110,6 +110,20 @@ echo '<hr>';
 		var_dump(bin2hex(substr($sectionInfo, ($i * 8) + 16, 4)));
 		if ($name == 16) {
 			$InfoFound = true;
+			echo '<hr>';
+			$offset = unpack('v', substr($sectionInfo, ($i * 8) + 20, 4))[1];
+			$name2 = unpack("V", substr($sectionInfo, 16 + $offset, 4))[1];
+			var_dump($offset);
+			var_dump($name2);
+			$offset2 = unpack('v', substr($sectionInfo, 16 + $offset + 4, 4))[1];
+			$name3 = unpack("V", substr($sectionInfo, 16 + $offset2, 4))[1];
+			var_dump($offset2);
+			var_dump(dechex($name3));
+			$offset3 = unpack('v', substr($sectionInfo, 16 + $offset2 + 4, 4))[1];
+			var_dump($offset3);
+			$val = substr($sectionInfo, 16 + $offset3, 2000);
+			var_dump($val);
+			break;
 		}
 	}
 	
